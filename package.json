@@ -18,5 +18,11 @@
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "vue": "^2.5.7"
-    }
+    },
+    "name": "votingsystem",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/YelzhasSagidulla/votingsystem.git",
+    "author": "Yelzhas Sagidulla <yelzhass@gmail.com>",
+    "license": "MIT"
 }

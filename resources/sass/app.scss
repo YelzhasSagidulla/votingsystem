@@ -12,3 +12,41 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+body{
+  background-color: #fff;
+}
+
+.vote-list, .vote-form {
+  width: 100%;
+  padding-top: 50px;
+}
+
+/*@media only screen and (max-width: 768px){
+
+  .vote-list, .vote-form {
+    padding-top: 30px;
+  }
+
+  .vote-form {
+    padding-left: 120px;
+  }
+}*/
+
+/**
+ * highlight results
+ */
+
+.candidate-row:nth-child(-n+10){
+  background-color:#d8e7ff;
+}
+
+.candidate-row:nth-child(-n+3){
+  background-color:#8cb8ff;
+}
+
+.candidate-row:nth-child(1){
+  background-color:#0061ff;
+  color:#fff;
+}
+
