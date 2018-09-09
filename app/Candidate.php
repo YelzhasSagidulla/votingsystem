@@ -13,4 +13,11 @@ class Candidate extends Model
     {
         return $this->hasMany('App\Vote');
     }
+
+    public function scopeOrdered($query)
+    {
+        return $query
+            ->orderBy('votes_count', 'DESC')
+            ->orderBy('lastname', 'ASC');
+    }
 }

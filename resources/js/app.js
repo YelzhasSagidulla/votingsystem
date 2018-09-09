@@ -8,6 +8,7 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.Lang = require('lang.js');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +16,30 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('candidates', require('./components/Candidates.vue'));
+
+/**
+ * Lang
+ */
+Vue.prototype.lang = new Lang({
+    messages: {
+        'en.id' : 'ID',
+
+        'en.firstname' : 'Имя',
+        'en.lastname' : 'Фамилия',
+        'en.patronymic' : 'Отчество',
+
+        'en.votes' : 'Голоса',
+        'en.vote' : 'Голосовать',
+        'en.vote_added': 'Голос отдан!',
+
+        'en.enter_firstname' : 'Введите имя',
+        'en.enter_lastname' : 'Введите фамилию',
+        'en.enter_patronymic' : 'Введите отчество'
+
+    }
+});
 
 const app = new Vue({
-    el: '#app'
+    el: '#myNewApp'
 });
